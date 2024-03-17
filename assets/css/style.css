@@ -119,7 +119,7 @@ header {
 
 .hero-overlay {
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     bottom: 35%;
     left: 18%;
     width: 25%;
@@ -439,6 +439,7 @@ footer {
         position: absolute;
         top: -1rem;
         margin: 0 15px;
+        z-index: 1000;
     }
 
     .hero {
