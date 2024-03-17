@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <base href="https://bernardagoncalves.github.io/IrisTech/">
+    <base href="/"> 
 
     <meta http-equiv="Cache-control" content="public" max-age="86400">
 
@@ -21,7 +21,7 @@
 
     <meta property="og:url" content="https://bernardagoncalves.github.io/IrisTech/index.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="IrisTech">
+    <meta property="og:title" content="IrisTech - Home">
     <meta property="og:image" content="https://bernardagoncalves.github.io/IrisTech/assets/img/image.png">
     <meta property="og:description" content="Loja de prestação de serviços e tecnologias.">
     <meta property="og:site_name" content="IrisTech">
@@ -31,7 +31,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@IrisTech">
     <meta name="twitter:url" content="https://bernardagoncalves.github.io/IrisTech/index.html">
-    <meta name="twitter:title" content="IrisTech">
+    <meta name="twitter:title" content="IrisTech - Home">
     <meta name="twitter:description" content="Loja de prestação de serviços e tecnologias.">
     <meta name="twitter:image" content="https://bernardagoncalves.github.io/IrisTech/assets/img/image.png">
 
@@ -48,7 +48,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!---Fontes da google-->
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -62,7 +61,7 @@
                 <img src="assets/img/logo.png" alt="IrisTech Logótipo" width="30">
             </a>
 
-            <span class="material-symbols-outlined" onclick="clickmenu()">menu </span>
+            <span class="btn-menu" data-feather="menu" onclick="clickmenu()"> menu </span>
             <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
@@ -80,7 +79,7 @@
             <p class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non rutrum.</p>
             <div class="serch-form">
                 <input type="search" placeholder="Pesquisar">
-                <button>
+                <button aria-labelledby="search-button">
                     <i data-feather="search"></i>
                 </button>
             </div>
@@ -154,10 +153,10 @@
     </footer>
     <script>
         function clickmenu() {
-            if(menu.style.display == 'block') {
+            if(menu.style.display == 'inline-flex') {
                 menu.style.display = 'none'
             } else {
-                menu.style.display = 'block'
+                menu.style.display = 'inline-flex'
             }
         }
     </script>

@@ -418,15 +418,27 @@ footer {
     }
 
 
-    .navbar span {
-        display: block;
-        color: #0075f1;
+    .navbar .btn-menu {
+        display: inline-flex;
+        color: #ffffff;
         background-color: transparent;
+        z-index: 1000;
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -18px;
+    }
+
+    .navbar #menu {
+        left: 25px;
+        transition: ease-in-out 0.3s all;
+        display: none;
     }
 
     .navbar ul {
-        display: none;
+        display: inline-flex;
         position: absolute;
+        top: -1rem;
+        margin: 0 15px;
     }
 
     .hero {
@@ -441,9 +453,8 @@ footer {
     }
 
     .hero-overlay h1 {
-       width: min-content;
-       margin-bottom: -8rem;
-       margin-right: auto;
+       margin-top: 20rem;
+       margin-left: 90px;
        font-size: small;
     }
 
@@ -452,9 +463,6 @@ footer {
     }
 
     .serch-form {
-        margin-top: 40px;
-        margin-left: 55px;
-        width: 75%;
         height: 30px;
         align-items: center;
     }
@@ -497,7 +505,8 @@ footer {
     }
 
     .about-des img {
-        width: 200px;
+        width: 100%;
+        margin: 0;
     }
 
     .faq-des {
@@ -508,6 +517,8 @@ footer {
         width: 35%;
     }
 }
+
+
 
 @media only screen and (max-width: 1068px) {
 
@@ -527,10 +538,6 @@ footer {
 
     .about-des {
         display: block;
-    }
-
-    .about-des img {
-        width: 600px;
     }
 
     .faq-des {
